@@ -675,7 +675,7 @@
 
     var params = new URLSearchParams(window.location.search);
     var slug = params.get("service") || params.get("category");
-    
+
     // Check aliases
     if (slug && !SERVICES[slug] && CATEGORY_MAP[slug]) {
       slug = CATEGORY_MAP[slug];
